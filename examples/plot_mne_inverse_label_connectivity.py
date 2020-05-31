@@ -55,6 +55,7 @@ event_id, tmin, tmax = 1, -0.2, 0.5
 epochs = mne.Epochs(raw, events, event_id, tmin, tmax, picks=picks,
                     baseline=(None, 0), reject=dict(mag=4e-12, grad=4000e-13,
                                                     eog=150e-6))
+exit(0)
 
 ###############################################################################
 # Compute inverse solutions and their connectivity
